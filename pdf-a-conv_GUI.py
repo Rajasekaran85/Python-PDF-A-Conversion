@@ -1,11 +1,6 @@
 from tkinter import filedialog
 from tkinter import *
-import sys
 import os
-import shutil
-from PIL import Image
-import io
-import pathlib
 import ghostscript
 
 
@@ -16,8 +11,6 @@ def browse_button():
     global filename
     filename = filedialog.askdirectory()
     folder_path.set(filename)
-    #print(folder_path)
-    #print(filename)
 
 def conv():
     print("\n PDF to PDF/A Conversion \n")
@@ -27,11 +20,8 @@ def conv():
     for fname in os.listdir(filename):
         print(fname)
         if not fname.endswith(".pdf"):
-            #print(fname)
             continue
         path = os.path.join(filename, fname)
-        #test = os.path.splitext(fname)[0]
-        #print(test)
         value1 = filename + '/' + fname
         value2 = filename + '/'
         print(value1)
@@ -40,9 +30,6 @@ def conv():
                    '-sOutputFile='+ value2 + 'PDFA-' + fname, path]
         ghostscript.Ghostscript(*ghostScriptExec)
     messagebox.showinfo("PDF/A Conversion", "Completed")
-    print(filename)
-    print(fname)
-    print(value1)
 
 root = Tk()
 root.geometry("400x250")
