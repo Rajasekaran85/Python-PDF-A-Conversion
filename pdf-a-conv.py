@@ -1,12 +1,12 @@
-import sys
 import os
-import shutil
 import ghostscript
 
 print("\n PDF to PDF/A Conversion \n")
 print("\n Developed by A Rajasekaran\n")
 print("\n Date: 20 April 2022 \n\n")
 
+# ghostscript package used
+# Output: PDF/A - 1b conversion
 
 filepath1 = input(" Enter the File path: ")
 
