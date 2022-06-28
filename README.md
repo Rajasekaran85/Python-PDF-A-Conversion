@@ -25,7 +25,8 @@ PDF to PDF/A Conversion Application
 * Tool will ask to enter the Input file path of the input pdf file
 * Tool will ask to enter the path of the output file
 * Tool execute the pdf files and converted the PDF/A format in the output directory
-* For GUI, select the input pdf file location and converted PDF-A output placed in same location
+* For GUI, select the input pdf file location and click the submit. Converted PDF-A output placed in same location.
+<p><img src="https://github.com/Rajasekaran85/Python-PDF-A-Conversion/blob/main/pdf-a.jpg"/></p>
 
 ## Version History
 
