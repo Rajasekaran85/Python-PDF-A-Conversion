@@ -2,8 +2,6 @@ import os
 import ghostscript
 
 print("\n PDF to PDF/A Conversion \n")
-print("\n Developed by A Rajasekaran\n")
-print("\n Date: 20 April 2022 \n\n")
 
 # ghostscript package used
 # Output: PDF/A - 1b conversion
@@ -32,7 +30,7 @@ for fname in os.listdir(filepath):
     #print(fname)
     #print(path)
     ghostScriptExec = ['gs', '-dPDFA', '-dBATCH', '-dNOPAUSE', '-dUseCIEColor', '-sProcessColorModel=DeviceRGB',
-                   '-sDEVICE=pdfwrite', '-dFastWebView', '-sPDFACompatibilityPolicy=1',
+                   '-sDEVICE=pdfwrite', '-dFastWebView', '-dAutoRotatePages=/None', '-sPDFACompatibilityPolicy=1',
                    '-sOutputFile='+ output + 'PDFA-' + fname, path]
     ghostscript.Ghostscript(*ghostScriptExec)
     #print(filepath)
