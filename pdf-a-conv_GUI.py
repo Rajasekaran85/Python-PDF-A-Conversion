@@ -26,7 +26,7 @@ def conv():
         value2 = filename + '/'
         print(value1)
         ghostScriptExec = ['gs', '-dPDFA', '-dBATCH', '-dNOPAUSE', '-dUseCIEColor', '-sProcessColorModel=DeviceRGB',
-                   '-sDEVICE=pdfwrite', '-dFastWebView', '-sPDFACompatibilityPolicy=1',
+                   '-sDEVICE=pdfwrite', '-dFastWebView', '-dAutoRotatePages=/None', '-sPDFACompatibilityPolicy=1',
                    '-sOutputFile='+ value2 + 'PDFA-' + fname, path]
         ghostscript.Ghostscript(*ghostScriptExec)
     messagebox.showinfo("PDF/A Conversion", "Completed")
