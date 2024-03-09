@@ -1,4 +1,4 @@
-# Project Title
+# Application Title
 
 PDF to PDF/A Conversion Application
 
