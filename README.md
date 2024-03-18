@@ -12,7 +12,7 @@ PDF to PDF/A Conversion Application
 
 ### Dependencies
 
-* Windows 7
+* Windows 7 or above
 
 ### Installing
 
